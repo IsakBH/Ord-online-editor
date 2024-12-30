@@ -1,36 +1,28 @@
 // lager variabler av html verdier
+let alignButtons = document.querySelectorAll(".align");
+let spacingButtons = document.querySelectorAll(".spacing");
+let formatButtons = document.querySelectorAll(".format");
+let scriptButtons = document.querySelectorAll(".script");
 let optionsButtons = document.querySelectorAll(".option-button");
 let advancedOptionButton = document.querySelectorAll(".adv-option-button");
 let fontName = document.getElementById("fontName");
 let fontSizeRef = document.getElementById("fontSize");
 let writingArea = document.getElementById("text-input");
 let linkButton = document.getElementById("createLink");
-let alignButtons = document.querySelectorAll(".align");
-let spacingButtons = document.querySelectorAll(".spacing");
-let formatButtons = document.querySelectorAll(".format");
-let scriptButtons = document.querySelectorAll(".script");
-
-// liste av fonter
 let fontList = [
   "Arial",
-  "Verdana",
   "Times New Roman",
-  "Garamond",
-  "Georgia",
-  "Courier New",
-  "cursive",
+  "Cursive",
 ];
 
-//Initial Settings
 const initializer = () => {
   //function calls for highlighting buttons
-  // ingen highlights for undo/redo og link/unlink fordi de er one time actions
   highlighter(alignButtons, true);
   highlighter(spacingButtons, true);
   highlighter(formatButtons, false);
   highlighter(scriptButtons, true);
 
-  //create options for font names
+  // lag valg av fonts
   fontList.map((value) => {
     let option = document.createElement("option");
     option.value = value;
@@ -38,7 +30,6 @@ const initializer = () => {
     fontName.appendChild(option);
   });
 
-  //fontSize allows only till 7
   for (let i = 1; i <= 7; i++) {
     let option = document.createElement("option");
     option.value = i;
@@ -46,7 +37,7 @@ const initializer = () => {
     fontSizeRef.appendChild(option);
   }
 
-  //default size
+  // default størrelsen på tekst
   fontSizeRef.value = 3;
 };
 
