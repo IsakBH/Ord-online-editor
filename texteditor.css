@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 0.05s;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+h1 {
+  padding-top: 0px;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+hr {
+  height: 25px;
+  width: 1px;
+  color: #020929;
+}
+
+.container {
+  background-color: #ffffff;
+  width: 100vmin;
+  padding: 50px 30px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  border-radius: 25px;
+  filter: drop-shadow(0 0 15px grey);
+}
+
+#reklame {
+  color: #8AC8FF;
+  text-decoration: none;
+}
+#reklame:visited {
+  color: rgb(36, 152.0512820513, 255);
+}
+#reklame:hover {
+  color: rgb(163.5, 211.9871794872, 255);
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+}
+
+button {
+  height: 28px;
+  width: 28px;
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+  border: none;
+  background-color: #ffffff;
+  outline: none;
+  color: #020929;
+  transition: 0.1s;
+  filter: drop-shadow(0px 3px 3px grey);
+}
+button:hover {
+  transform: scale(1.5);
+}
+
+select {
+  padding: 7px;
+  border: 1px solid #020929;
+  border-radius: 3px;
+}
+
+.options label, .options select {
+  font-family: "Poppins", sans-serif;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+input[type=color] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  width: 40px;
+  height: 28px;
+  border: none;
+  cursor: pointer;
+}
+
+#text-input {
+  margin-top: 10px;
+  border: 1px solid #CCD4DB;
+  padding: 20px;
+  height: 50vh;
+  border-radius: 5px;
+}
+
+.active {
+  background-color: #8AC8FF;
+}
+
+/*# sourceMappingURL=texteditor.css.map */
