@@ -10,6 +10,10 @@
   </head>
   <body>
 
+
+    <?php
+      echo("wasd");
+    ?>
     <!-- layouten av toolbaren er direkte kopiert fra Google Docs for "familiarity" -->
 
     <div class="container"> <!--  containeren for toolbaren -->
